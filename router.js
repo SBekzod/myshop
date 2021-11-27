@@ -18,7 +18,7 @@ router.get("/", (req, res) => {
 });
 router.get("/home", (req, res) => {
   console.log("/home");
-  res.end("you are in home page");
+  res.render("home", { user: user });
 });
 router.get("/users", (req, res) => {
   console.log("/users");
